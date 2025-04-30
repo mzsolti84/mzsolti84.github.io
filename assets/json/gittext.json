@@ -1,0 +1,50 @@
+{
+	"init": {
+		"description": "This command initializes a new Git repository in your current directory. It sets up the necessary files and directories for version control, allowing you to start tracking changes to your project. It's the first step in creating a new repository.",
+		"example": "git init"
+	},
+	"clone": {
+		"description": "This command creates a copy of an existing repository from a remote server to your local machine. It downloads all the files, commits, and branches, enabling you to work on the project locally. It's commonly used to collaborate on projects hosted on platforms like GitHub.",
+		"example": "git clone https://github.com/user/repository.git"
+	},
+	"status": {
+		"description": "This command displays the state of the working directory and staging area. It shows which changes have been staged, which haven't, and which files aren't being tracked by Git. It's useful for understanding what changes are ready to be committed and what still needs attention.",
+		"example": "git status"
+	},
+	"add": {
+		"description": "This command adds changes in the working directory to the staging area. It prepares the changes to be included in the next commit. You can add individual files or use patterns to add multiple files at once. It's a crucial step before committing changes.",
+		"example": "git add ."
+	},
+	"commit": {
+		"description": "This command records changes from the staging area to the repository. It creates a new commit with a message describing the changes. Each commit represents a snapshot of your project at a specific point in time, allowing you to track its history.",
+		"example": "git commit -m \"#1 - Add new feature\""
+	},
+	"push": {
+		"description": "This command uploads local repository content to a remote repository. It allows others to access your changes and collaborate on the project. It's often used after committing changes to share them with team members or update the remote repository.",
+		"example": "git push origin main"
+	},
+	"pull": {
+		"description": "This command fetches and integrates changes from a remote repository into your local repository. It keeps your local repository up-to-date with the latest changes made by others. It's a combination of git fetch and git merge.",
+		"example": "git pull origin main"
+	},
+	"branch": {
+		"description": "This command lists, creates, or deletes branches. Branches are separate lines of development within a repository, allowing you to work on different features or fixes independently. You can switch between branches to work on different parts of your project.",
+		"example": "git branch new-feature"
+	},
+	"checkout": {
+		"description": "This command switches between branches or restores working directory files to a previous state. It's used to navigate between different branches or revert changes. You can also use it to create new branches from existing ones.",
+		"example": "git checkout new-feature"
+	},
+	"merge": {
+		"description": "This command combines changes from different branches into a single branch. It integrates the work done in parallel, resolving any conflicts that may arise. It's commonly used to merge feature branches into the main branch.",
+		"example": "git merge new-feature"
+	},
+	"diff": {
+		"description": "This command shows the differences between various commits, branches, or files. It helps you understand changes made to the code by comparing different versions. You can see what has been added, modified, or deleted.",
+		"example": "git diff HEAD~1 HEAD"
+	},
+	"log": {
+		"description": "This command displays a log of commits, showing the history of changes made to the repository. It provides detailed information about each commit, including the author, date, and commit message. It's useful for tracking the project's development over time.",
+		"example": "git log"
+	}
+}
